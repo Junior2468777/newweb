@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Artists - Rooftop Lounge Garden Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        header h1 {
+            margin-top: 10px;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            border-radius: 10px;
+        }
+        section h2 {
+            color: #2d2d2d;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        section p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .artist {
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .artist img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            height: auto;
+        }
+        .artist .details {
+            text-align: left;
+            color: #333;
+            margin-top: 15px;
+            width: 100%;
+        }
+        .artist .details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #4CAF50; /* Accent green */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 15px;
+            }
+            section h2 {
+                font-size: 28px;
+            }
+            .artist {
+                width: 80%;
+                margin: 20px auto;
+            }
+            .artist .details {
+                text-align: center;
+            }
+            .artist img {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .artist {
+                width: 90%;
+                margin: 15px auto;
+            }
+            .artist img {
+                max-width: 100%;
+            }
+            section h2 {
+                font-size: 24px;
+            }
+            section p {
+                font-size: 16px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="C:\Users\LENOVO\Videos\Project2025\11.1.2025\Night Life\RoofTop Lounge\logo.jpg" alt="Rooftop Lounge Garden Bar Logo">
+        <h1>Rooftop Lounge Garden Bar</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="local.html">Local Artists</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Local Artists</h2>
+        <p>At Rooftop Lounge Garden Bar, we support local talent by featuring live performances from talented artists. Explore the artists who bring energy, rhythm, and excitement to our venue.</p>
+
+        <!-- Example Artist 1 -->
+        <div class="artist">
+            <img src="path_to_artist_image_1.jpg" alt="Artist Image 1">
+            <div class="details">
+                <h3><span class="highlight">Artist Name 1</span></h3>
+                <p>Artist Bio: A brief introduction to the artist. What kind of music they perform, their experience, and their journey in the industry.</p>
+                <p><strong>Genre:</strong> Genre of Music</p>
+                <p><strong>Social Media:</strong> 
+                    <a href="https://www.instagram.com/artist1" class="highlight" target="_blank">Instagram</a> | 
+                    <a href="https://www.youtube.com/channel/artist1" class="highlight" target="_blank">YouTube</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Example Artist 2 -->
+        <div class="artist">
+            <img src="path_to_artist_image_2.jpg" alt="Artist Image 2">
+            <div class="details">
+                <h3><span class="highlight">Artist Name 2</span></h3>
+                <p>Artist Bio: A brief introduction to the artist. What kind of music they perform, their experience, and their journey in the industry.</p>
+                <p><strong>Genre:</strong> Genre of Music</p>
+                <p><strong>Social Media:</strong> 
+                    <a href="https://www.instagram.com/artist2" class="highlight" target="_blank">Instagram</a> | 
+                    <a href="https://www.youtube.com/channel/artist2" class="highlight" target="_blank">YouTube</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Example Artist 3 -->
+        <div class="artist">
+            <img src="path_to_artist_image_3.jpg" alt="Artist Image 3">
+            <div class="details">
+                <h3><span class="highlight">Artist Name 3</span></h3>
+                <p>Artist Bio: A brief introduction to the artist. What kind of music they perform, their experience, and their journey in the industry.</p>
+                <p><strong>Genre:</strong> Genre of Music</p>
+                <p><strong>Social Media:</strong> 
+                    <a href="https://www.instagram.com/artist3" class="highlight" target="_blank">Instagram</a> | 
+                    <a href="https://www.youtube.com/channel/artist3" class="highlight" target="_blank">YouTube</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rooftop Lounge Garden Bar. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events - Rooftop Lounge Garden Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        header h1 {
+            margin-top: 10px;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            background-color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px;
+            border-radius: 10px;
+        }
+        section h2 {
+            color: #2d2d2d;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        section p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .event {
+            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .event img {
+            width: 100%;
+            max-width: 300px; /* Limit the size of images */
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .event .details {
+            text-align: left;
+            color: #333;
+            margin-top: 15px;
+        }
+        .event .details h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #4CAF50; /* Accent green */
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.8);
+        }
+        .modal-content {
+            margin: 15% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            height: auto;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            background: none;
+            border: none;
+        }
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 15px;
+            }
+            section h2 {
+                font-size: 28px;
+            }
+            .event img {
+                max-width: 90%; /* Make images smaller on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="C:\Users\LENOVO\Videos\Project2025\11.1.2025\Night Life\RoofTop Lounge\logo.jpg" alt="Rooftop Lounge Garden Bar Logo">
+        <h1>Rooftop Lounge Garden Bar</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="events.html">Events</a>
+        <a href="local.html">Local Artists</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Upcoming Events</h2>
+        <p>Join us for exciting events happening at Rooftop Lounge Garden Bar. From live music to themed nights, there’s always something to enjoy.</p>
+
+        <!-- Example Event 1 -->
+        <div class="event">
+            <img src=event1.png onclick="openModal(this)">
+            <div class="details">
+                <h3><span class="highlight">Event Name</span> - Date</h3>
+                <p>Description of the event. What guests can expect, the theme, special guests, and more.</p>
+                <p><strong>Time:</strong> 7:00 PM - 11:00 PM</p>
+                <p><strong>Location:</strong> Rooftop Lounge Garden Bar, Ashbury, Heidedal, Bloemfontein</p>
+            </div>
+        </div>
+
+        <!-- Example Event 2 -->
+        <div class="event">
+            <img src=event2.png onclick="openModal(this)">
+            <div class="details">
+                <h3><span class="highlight">Event Name 2</span> - Date</h3>
+                <p>Description of the event. Mention guest performers, activities, and anything that makes the event special.</p>
+                <p><strong>Time:</strong> 6:00 PM - 10:00 PM</p>
+                <p><strong>Location:</strong> Rooftop Lounge Garden Bar, Ashbury, Heidedal, Bloemfontein</p>
+            </div>
+        </div>
+
+        <!-- Example Event 3 -->
+        <div class="event">
+            <img src="path_to_event_image_3.jpg" alt="Event Image 3" onclick="openModal(this)">
+            <div class="details">
+                <h3><span class="highlight">Event Name 3</span> - Date</h3>
+                <p>Catch a glimpse of past events. Click below to see photos and videos from previous events.</p>
+                <a href="event_photos.html" class="highlight">See Event Photos</a><br>
+                <a href="event_videos.html" class="highlight">Watch Event Videos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rooftop Lounge Garden Bar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Modal for images -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
